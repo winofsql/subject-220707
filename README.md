@@ -15,3 +15,15 @@ $( function(){
 
 });
 ```
+
+### opener が存在しない場合の対処
+```javascript
+    $("tr").on("click", function(){
+        var scode = $(this).find("td").eq(0).text();
+        if ( opener != null ) {
+            opener.$("#scode").val(scode);
+            opener.$("#btn").click();
+            window.close();
+        }
+    });
+```
