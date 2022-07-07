@@ -78,5 +78,5 @@ $( function(){
         document.location.href = self;
     }
     ```
-    - jQuery で 次の入力フィールドを探す\
+    - jQuery で 次の入力フィールドを探す( **php-mtn-v05-enter-control** )\
     ![image](https://user-images.githubusercontent.com/1501327/177698426-08d7d76d-1db5-41f8-87da-a66fb8c75203.png)
