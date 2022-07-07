@@ -80,3 +80,49 @@ $( function(){
     ```
     - jQuery で 次の入力フィールドを探す( **php-mtn-v05-enter-control** )\
     ![image](https://user-images.githubusercontent.com/1501327/177698426-08d7d76d-1db5-41f8-87da-a66fb8c75203.png)
+
+
+### jQuery でコンボボックスを作成( PHP と連携 )
+```javascript
+<script>
+// ******************************
+// jQuery onload イベント
+// ******************************
+var syozoku = <?= $json ?>;
+
+var cur_syozoku = "<?= $_POST["syozoku"] ?>";
+
+$(function(){
+
+    // 第一画面の初期フォーカス
+    $("#scode").focus();
+
+    // 第二画面の初期フォーカス
+    if ( <?= $gno ?> == 2 ) {
+        $("#sname")
+            .focus()
+            .select();
+
+        $.each( syozoku, function( index ){
+
+            if ( cur_syozoku == syozoku[index]["コード"] ) {
+                $("#syozoku").append( 
+                $('<option>')
+                    .text( syozoku[index]["名称"] )
+                    .val( syozoku[index]["コード"] )
+                    .prop("selected", true )
+                );
+            }
+            else {
+                $("#syozoku").append( 
+                $('<option>')
+                    .text( syozoku[index]["名称"] )
+                    .val( syozoku[index]["コード"] )
+                );
+            }
+
+        });
+    }
+
+});
+```
