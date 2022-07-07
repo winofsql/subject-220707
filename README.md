@@ -126,3 +126,6 @@ $(function(){
 
 });
 ```
+
+
+### [JavaScript : 文字列処理( メソッド )](http://cya.sakura.ne.jp/js/string.htm)
