@@ -27,3 +27,13 @@ $( function(){
         }
     });
 ```
+
+- ### キャンセルボタン(処理含む)のバリエーション
+    - jQuery の処理
+    ```javascript
+    $(function(){
+        $("#cancel").on("click", function(){
+            document.location.href="http://localhost/php-0707-01/php-mtn-v04-communication/syain.php";
+        });
+    });
+    ```
