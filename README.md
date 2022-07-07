@@ -52,3 +52,7 @@ $( function(){
         onclick='start_page();';
     >
     ```
+    - アンカーでキャンボタン
+    ```html
+    <a href="http://localhost/php-0707-01/php-mtn-v04-communication/syain.php" class="btn btn-primary ms-4">キャンセル</a>
+    ```
