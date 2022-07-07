@@ -129,3 +129,23 @@ $(function(){
 
 
 ### [JavaScript : 文字列処理( メソッド )](http://cya.sakura.ne.jp/js/string.htm)
+
+indexOf
+文字列を前方検索します。
+length
+文字列の長さを取得します。
+replace
+文字列を置換します。
+slice
+文字列を切り取ります。整数のゼロ埋め(0パディング)。
+split
+文字列をセパレータで分解します。文字列内に指定文字がいくつあるか。
+substr
+文字列を切り取ります。
+toLowerCase
+文字列を小文字に変換します。
+toUpperCase
+文字列を大文字に変換します。
+trim
+文字列の両端の空白を削除します。
+
