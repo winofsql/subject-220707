@@ -38,3 +38,17 @@ $( function(){
     });
     <input <?= $disabled_2 ?> type="button" name="cancel" id="cancel" class="btn btn-primary ms-4" value="キャンセル">
     ```
+    - function を HTML 内から呼ぶ
+    ```
+    function start_page() {
+        document.location.href="http://localhost/php-0707-01/php-mtn-v04-communication/syain.php";
+    }
+    <input
+        <?= $disabled_2 ?>
+        type="button"
+        name="cancel"
+        class="btn btn-primary ms-4" 
+        value="キャンセル" 
+        onclick='start_page();';
+    >
+    ```
