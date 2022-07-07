@@ -129,7 +129,7 @@ $(function(){
 
 
 ### [JavaScript : 文字列処理( メソッド )](http://cya.sakura.ne.jp/js/string.htm)
-
+```
 indexOf
 文字列を前方検索します。
 length
@@ -148,4 +148,4 @@ toUpperCase
 文字列を大文字に変換します。
 trim
 文字列の両端の空白を削除します。
-
+```
