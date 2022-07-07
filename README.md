@@ -56,3 +56,7 @@ $( function(){
     ```html
     <a href="http://localhost/php-0707-01/php-mtn-v04-communication/syain.php" class="btn btn-primary ms-4">キャンセル</a>
     ```
+    - アンカーに PHP 変数埋め込み
+    ```
+    <a href="<?= $_SERVER["PHP_SELF"] ?>" class="btn btn-primary ms-4">キャンセル</a>
+    ```
