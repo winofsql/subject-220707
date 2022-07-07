@@ -60,3 +60,21 @@ $( function(){
     ```
     <a href="<?= $_SERVER["PHP_SELF"] ?>" class="btn btn-primary ms-4">キャンセル</a>
     ```
+    - PHP 側の値を JavaScript で使用する
+    ```javascript
+    // <?= $_SERVER["SCRIPT_NAME"] ?>
+    // <?= $_SERVER["PHP_SELF"] ?>
+
+    var self = "<?= $_SERVER["PHP_SELF"] ?>";
+
+    $(function(){
+        $("#cancel").on("click", function(){
+            start_page();
+            // document.location.href="http://localhost/php-0707-01/php-mtn-v04-communication/syain.php";
+        });
+    });
+
+    function start_page() {
+        document.location.href = self;
+    }
+    ```
